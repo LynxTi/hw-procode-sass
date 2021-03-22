@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+}
+.header li {
+  list-style-type: none;
+}
+.header .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-top ul {
+  display: flex;
+  padding: 0;
+}
+.header .header-top ul .top-nav-item {
+  padding: 5px;
+}
+.header .header-top ul .top-nav-item:hover {
+  background-color: lightgray;
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-content .logo-and-serch-block-container {
+  display: flex;
+  gap: 30px;
+}
+.header .header-content .logo-and-serch-block-container .header-content-logo img {
+  width: 240px;
+  height: 67px;
+}
+.header .header-content .logo-and-serch-block-container .header-content-search-block {
+  display: flex;
+  align-items: center;
+}
+.header .header-content .logo-and-serch-block-container .header-content-search-block input {
+  border: none;
+  height: 16px;
+}
+.header .header-content .logo-and-serch-block-container .header-content-search-block input:hover {
+  border: none;
+  height: 14px;
+  border-bottom: 2px solid black;
+}
+.header .header-content .phone-and-autorezation-block-container {
+  display: flex;
+  gap: 20px;
+}
+.header .header-content .phone-and-autorezation-block-container .header-content-phone-number-block, .header .header-content .phone-and-autorezation-block-container .header-content-authorization-block {
+  display: flex;
+  gap: 5px;
+}
+.header .header-content .phone-and-autorezation-block-container:last-child {
+  margin-right: 10px;
+}
+.header .header-content .phone-and-autorezation-block-container > *:hover {
+  border-bottom: 1px solid black;
+}
+.header .header-bottom {
+  width: 100%;
+}
+.header .header-bottom .header-bottom-nav-list {
+  display: flex;
+  gap: 4px;
+}
+.header .header-bottom .header-bottom-nav-list .header-bottom-list-item {
+  background-color: lightgray;
+  padding: 10px 20px;
+  width: calc(100% / 9);
+}
+.header .header-bottom .header-bottom-nav-list .header-bottom-list-item:hover {
+  background-color: inherit;
+}/*# sourceMappingURL=stiles.css.map */

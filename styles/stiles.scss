@@ -1,0 +1,98 @@
+@mixin header-display-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+
+    li {
+        list-style-type: none;
+
+    }
+
+    .header-top {
+        // display: flex;
+        // justify-content: space-between;
+        @include header-display-flex;
+
+        ul {
+            display: flex;
+            padding: 0;
+
+        }
+
+        ul .top-nav-item {
+            padding: 5px;
+            &:hover {
+                background-color: lightgray;
+            }
+        }
+    }
+
+    .header-content {
+        @include header-display-flex;
+        align-items: center;
+        .logo-and-serch-block-container {
+            display: flex;
+            gap: 30px;
+
+            .header-content-logo img {
+                width: 240px;
+                height: 67px;
+            }
+
+            .header-content-search-block {
+                display: flex;
+                align-items: center;                
+                input{
+                    border: none;
+                    height: 16px;
+                    &:hover {
+                        border: none;
+                        height: 14px;
+                        border-bottom:2px solid black ;
+                    }
+                }
+            }
+        }
+
+        .phone-and-autorezation-block-container {
+            display: flex;
+            gap: 20px;
+
+            .header-content-phone-number-block, .header-content-authorization-block {
+                display: flex;
+                gap: 5px;
+            }
+
+            &:last-child {
+                margin-right: 10px;
+            }
+
+            >*:hover {
+                border-bottom: 1px solid black;
+            }
+        }
+
+    }
+
+    .header-bottom {
+        width: 100%;
+
+        .header-bottom-nav-list {
+            display: flex;
+            gap: 4px;
+
+            .header-bottom-list-item {
+                background-color: lightgray;
+                padding: 10px 20px;
+                width: calc(100% / 9);
+                
+                &:hover {
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}
